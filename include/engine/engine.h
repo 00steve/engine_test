@@ -76,13 +76,13 @@ private:
 	}
 
 	void setDefaultOpenGLSettings() {
-		/*glEnable(GL_LIGHTING);
+		glEnable(GL_LIGHTING);
 		glEnable(GL_LIGHT0);
 		quaternion lightAngle = quaternion::left();
 		GLfloat lightpos[] = {0, 1, 1, 0};
 		glLightfv(GL_LIGHT0, GL_POSITION, lightpos);
 		glPointSize(5);
-		*/
+
 	}
 
 	/**\brief Much like the setCurrentState() function, this function

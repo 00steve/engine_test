@@ -7,13 +7,13 @@ the collider applied and the velocity vector of the object that
 collided with it.*/
 
 
-struct Impact{
+struct impact{
 
 	double3 position;
 	double3 velocity;
 	double mass;
 
-	Impact(double3 position,double3 velocity,double mass);
+	impact(double3 position,double3 velocity,double mass);
 
 };
 
