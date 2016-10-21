@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1446671344 source:n:\programming\c++\engine\main.cpp
+	<iostream>
+
+1477081795 source:n:\programming\c++\engine\engine\assetlibrary\assetlibrary.cpp
+	"assetlibrary.h"
+
+1477081767 n:\programming\c++\engine\engine\assetlibrary\assetlibrary.h
+	"../core/varmap.h"
+	<string>
+	"../core/stringutil.h"
+	"../core/map.h"
+	"dll.h"
+	"../core/node.h"
+
+1477081874 n:\programming\c++\engine\engine\core\varmap.h
+	"map.h"
+	"list.h"
+	<typeinfo>
+	<iostream>
+	<fstream>
+	<string>
+	"stringutil.h"
+
+1458260778 n:\programming\c++\engine\engine\core\map.h
+	<string>
+	"list.h"
+	"stringutil.h"
+
+1460905251 n:\programming\c++\engine\engine\core\list.h
+	<string.h>
+	<iostream>
+
+1459779203 n:\programming\c++\engine\engine\core\stringutil.h
+	<string.h>
+	"double3.h"
+	"list.h"
+	<sstream>
+	<iostream>
+
+1458173792 n:\programming\c++\engine\engine\core\double3.h
+	<limits>
+	<math.h>
+
+1461106850 n:\programming\c++\engine\engine\assetlibrary\dll.h
+	<windows.h>
+
+1461724911 n:\programming\c++\engine\engine\core\node.h
+	<iostream>
+	"nodemessage.h"
+	"list.h"
+	"map.h"
+	"varmap.h"
+	"noderequest.h"
+
+1460899248 n:\programming\c++\engine\engine\core\nodemessage.h
+
+1458404079 n:\programming\c++\engine\engine\core\noderequest.h
+
+1459440114 source:n:\programming\c++\engine\engine\core\double3.cpp
+	"double3.h"
+
+1461724831 source:n:\programming\c++\engine\engine\core\node.cpp
+	"node.h"
+	"../assetlibrary/assetlibrary.h"
+
+1457411888 source:n:\programming\c++\engine\engine\core\nodemessage.cpp
+	"nodemessage.h"
+
+1459779197 source:n:\programming\c++\engine\engine\core\stringutil.cpp
+	"stringutil.h"
+
+1460909319 source:n:\programming\c++\engine\engine\core\varmap.cpp
+	"varmap.h"
+
+1477082331 source:n:\programming\c++\engine\engine\engine.cpp
+	"engine.h"
+	"assetlibrary/assetlibrary.h"
+
+1477082356 n:\programming\c++\engine\engine\engine.h
+	<GLFW/glfw3.h>
+	"core/node.h"
+	"core/list.h"
+	"core/double3.h"
+

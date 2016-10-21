@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="bin/Debug/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-lfreeimage" />
+			<Add library="ode" />
+			<Add library="glew32" />
+			<Add library="glfw" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="mingw32" />
+		</Linker>
+		<Unit filename="include/assets/shaders/depth_fragment.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/depth_vertex.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/fog_fragment.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/fog_vertex.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/simple1_fragment.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/simple1_vertex.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/texture_fragment.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/assets/shaders/texture_vertex.txt">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ai/n_path.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/dataviewer_main_menu_functions.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/lbr.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/lbrdatapoint.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/lbrdatastream.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/lbrdatastream2d.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/dataviewer/lbrgraph.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/file_browser_3d.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/fps.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/fpse.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/fpse/fpse_context_menus.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/fpse/fpse_main_menu_functions.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/fpse/fpse_object_menu_functions.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/loading_screen.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/loading_screen/loading_screen_progress.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/loading_screen/progress_load_bar.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/menu_screen.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/control/race.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/action.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/actions/send_message.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/actor.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/asset_library.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/camera.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/condition.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/conditions/is_more_than.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/const.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/controllable.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/controller.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/depth_click.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/double2.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/double3.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/double4x4.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/engine_control.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/engine_setup.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/event.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/float3x3.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/input.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/int2.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/list.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/loader.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/map.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/node.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/node_message.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/ordered_list.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/physical.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/projectile.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/projectile_weapon.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/prop.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/quaternion.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/random.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/string_util.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/thread.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/thread_safe_list.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/timer.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/trigger.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/type-map.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/updatable.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/var_map.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/vehicle.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/view.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/core/window.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/engine.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/file/file_computer.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/file/file_drive.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/file/file_file.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/file/file_folder.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/file/file_item.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/attached_camera.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/billboard.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/draw_mesh.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/drawable.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/floating_camera.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/fps_camera.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/fpse_camera.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/gl_shape.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/gl_structs.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/gl_util.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/glvectortext.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/material.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/mesh.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/polygon.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/shader.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/texture.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/graphics/window_properties.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/include_list/fps.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/input/keyboard_mouse.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/load/bmp.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/load/dependency.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/load/image.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/load/obj.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/barrel.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/car.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/crate.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/decoration.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/drag_widget.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/fire.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/force_sphere.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/fps_player.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/ground.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/health_pack.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/infinite_plane.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/marker.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/particle.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/particles/flame.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/pickup.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/projectiles/bullet.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/projectiles/bullet762x39mm.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/projectiles/bullet9mm.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/projectiles/collision_gernade.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/projectiles/timed_gernade.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/selection_vector.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/skybox.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/spawner.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/turret.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/vehicle/macpherson_strut.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/weapons/ak47.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/weapons/gernade_launcher.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/nodes/weapons/glock19.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/collision.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/collision_trigger.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/contact_settings.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/force.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/impact.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/ode.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/ode_node.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/ode_utils.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/physical_single_body.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/physics/portal.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/indui.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/indui_optionfunction.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/indui_optionselection.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induibutton.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induicheckbox.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induicontextmenu.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induidock.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induidropdown.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induifilebrowser.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induilist.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induimod.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induinumberbox.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induislider.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induitextbox.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/engine/ui/induiwidget.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot class_diagrams="1" />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
