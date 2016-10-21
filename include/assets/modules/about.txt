@@ -1,7 +1,0 @@
-The modeles folder holds all of the .dlls that can be accessed by the engine settings file (.est).
-
-Each subfolder is the type of .dll that can be loaded.
-
-go into a .est file and look at the groups (cameras, objects, views).
-
-Any control.type properties should have a coorisponding .dll in the controls folder.
