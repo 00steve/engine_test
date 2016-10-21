@@ -83,3 +83,148 @@
 	"core/list.h"
 	"core/double3.h"
 
+1477084750 source:c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\assetlibrary.cpp
+	"assetlibrary.h"
+
+1477084950 c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\assetlibrary.h
+	"../core/varmap.h"
+	<string>
+	<engine/core/stringutil.h>
+	<engine/core/map.h>
+	<engine/assetlibrary/dll.h>
+	<engine/core/enginecontrol.h>
+	<engine/graphics/view.h>
+	<engine/graphics/camera.h>
+	<engine/core/node.h>
+
+1477081874 c:\program files (x86)\codeblocks\mingw\include\engine\core\varmap.h
+	"map.h"
+	"list.h"
+	<typeinfo>
+	<iostream>
+	<fstream>
+	<string>
+	"stringutil.h"
+
+1458260778 c:\program files (x86)\codeblocks\mingw\include\engine\core\map.h
+	<string>
+	"list.h"
+	"stringutil.h"
+
+1460905251 c:\program files (x86)\codeblocks\mingw\include\engine\core\list.h
+	<string.h>
+	<iostream>
+
+1459779203 c:\program files (x86)\codeblocks\mingw\include\engine\core\stringutil.h
+	<string.h>
+	"double3.h"
+	"list.h"
+	<sstream>
+	<iostream>
+
+1458173792 c:\program files (x86)\codeblocks\mingw\include\engine\core\double3.h
+	<limits>
+	<math.h>
+
+1461106850 c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\dll.h
+	<windows.h>
+
+1461724911 c:\program files (x86)\codeblocks\mingw\include\engine\core\node.h
+	<iostream>
+	"nodemessage.h"
+	"list.h"
+	"map.h"
+	"varmap.h"
+	"noderequest.h"
+
+1460899248 c:\program files (x86)\codeblocks\mingw\include\engine\core\nodemessage.h
+
+1458404079 c:\program files (x86)\codeblocks\mingw\include\engine\core\noderequest.h
+
+1459440114 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\double3.cpp
+	"double3.h"
+
+1457415416 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\enginecontrol.cpp
+	"enginecontrol.h"
+
+1477084038 c:\program files (x86)\codeblocks\mingw\include\engine\core\enginecontrol.h
+	"node.h"
+
+1461724831 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\node.cpp
+	"node.h"
+	"../assetlibrary/assetlibrary.h"
+
+1457411888 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\nodemessage.cpp
+	"nodemessage.h"
+
+1459779197 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\stringutil.cpp
+	"stringutil.h"
+
+1460909319 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\varmap.cpp
+	"varmap.h"
+
+1477087016 source:n:\programming\c++\engine_test\main.cpp
+	<iostream>
+	<engine/engine.h>
+
+1477086934 source:c:\program files (x86)\codeblocks\mingw\include\engine\engine.cpp
+	"engine.h"
+
+1477085577 c:\program files (x86)\codeblocks\mingw\include\engine\engine.h
+	<GLFW/glfw3.h>
+	<engine/core/node.h>
+	<engine/core/list.h>
+	<engine/core/double3.h>
+	<engine/core/enginecontrol.h>
+	<engine/graphics/window.h>
+	<engine/assetlibrary/assetlibrary.h>
+
+1477085395 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\camera.cpp
+	"camera.h"
+
+1477084930 c:\program files (x86)\codeblocks\mingw\include\engine\graphics\camera.h
+	<engine/core/node.h>
+
+1460419323 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\glew.c
+	"GL/glew.h"
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+
+1460419416 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\glstructs.cpp
+	"glstructs.h"
+
+1460417949 c:\program files (x86)\codeblocks\mingw\include\engine\graphics\glstructs.h
+	<cstdlib>
+	<fstream>
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<engine/core/double3.h>
+
+1477085710 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\view.cpp
+	"view.h"
+
+1477084905 c:\program files (x86)\codeblocks\mingw\include\engine\graphics\view.h
+	<engine/core/node.h>
+	<engine/core/int2.h>
+	<engine/core/double2.h>
+	<GL/glu.h>
+
+1477085722 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\window.cpp
+	"window.h"
+
+1477086656 c:\program files (x86)\codeblocks\mingw\include\engine\graphics\window.h
+	<windows.h>
+	<GLFW/glfw3.h>
+	<engine/core/node.h>
+	<engine/core/int2.h>
+	<engine/graphics/view.h>
+

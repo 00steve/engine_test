@@ -7,7 +7,12 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 
-
-    Engine e;
+	Engine engine;
+	if(!engine.Init()){
+		cout << "engine failed to initialize\n";
+		return 0;
+	}
+    cout << "start engine\n";
+	engine.Run();
     return 0;
 }

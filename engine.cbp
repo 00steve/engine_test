@@ -45,24 +45,26 @@
 			<Add library="glu32" />
 			<Add library="mingw32" />
 		</Linker>
-		<Unit filename="engine/assetlibrary/assetlibrary.cpp" />
-		<Unit filename="engine/assetlibrary/assetlibrary.h" />
-		<Unit filename="engine/assetlibrary/dll.h" />
-		<Unit filename="engine/core/double3.cpp" />
-		<Unit filename="engine/core/double3.h" />
-		<Unit filename="engine/core/list.h" />
-		<Unit filename="engine/core/map.h" />
-		<Unit filename="engine/core/node.cpp" />
-		<Unit filename="engine/core/node.h" />
-		<Unit filename="engine/core/nodemessage.cpp" />
-		<Unit filename="engine/core/nodemessage.h" />
-		<Unit filename="engine/core/noderequest.h" />
-		<Unit filename="engine/core/stringutil.cpp" />
-		<Unit filename="engine/core/stringutil.h" />
-		<Unit filename="engine/core/varmap.cpp" />
-		<Unit filename="engine/core/varmap.h" />
-		<Unit filename="engine/engine.cpp" />
-		<Unit filename="engine/engine.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/dll.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/list.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/map.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/noderequest.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/engine.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/engine.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
