@@ -29,7 +29,8 @@ bool Engine::Init(){
 	settings = settings.GetGroup("default");
 
     if(settings.IsSet("engine-control.type")){
-		EngineControl* ec = Assets().LoadEngineControl(this,settings.GetGroup("engine-control"));
+		//EngineControl* ec = Assets().LoadEngineControl(this,settings.GetGroup("engine-control"));
+		EngineControl* ec = Assets().Load<EngineControl*>(this,settings.GetGroup("engine-control"));
 		engineControlStack.Push(ec);
 		Node::RegisterGlobal((Node*)ec,"engine-control");
     }

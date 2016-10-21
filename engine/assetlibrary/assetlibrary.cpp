@@ -45,6 +45,7 @@ T AssetLibrary::Load(Node* loader,string fileName,VarMap settings){
     string funcName = string("Build");
 	T object = GetDllValue<T>(dll,funcName.c_str());
 	object->GlobalsRef(Node::GlobalsRef());
+	//pass along the global references from the parent
 	object->GlobalRequestsRef(loader->GlobalRequestsRef());
 	object->AssetLibraryRef(loader->AssetLibraryRef());
 	cout << " - static node asset library : " << loader->AssetLibraryRef() << endl;
