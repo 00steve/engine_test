@@ -1,0 +1,1 @@
+This folder contains all of the default sub-directories that hold all of the assets used by the engine. If you set a camera shader, and place the frament/vertex files in the include/assets/shaders directory, you can directly reference it using the command shader shader_name, instead of having to type in the entire directory.

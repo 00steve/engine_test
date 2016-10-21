@@ -1,0 +1,949 @@
+# depslib dependency file v1.0
+1456070977 source:d:\programming\c++\engine\main.cpp
+	"include/engine/engine.h"
+
+1456372720 d:\programming\c++\engine\include\engine\engine.h
+	<iostream>
+	"core/window.h"
+	"core/asset_library.h"
+	"core/node.h"
+	"physics/ode.h"
+	"core/engine_setup.h"
+	"ui/indui.h"
+	"core/timer.h"
+	"core/engine_control.h"
+	"control/loading_screen.h"
+	"control/fps.h"
+
+1456372502 d:\programming\c++\engine\include\engine\core\window.h
+	"../glew.c"
+	<GL/glfw.h>
+	<GL/glu.h>
+	"../core/list.h"
+	"../core/view.h"
+	"../core/node.h"
+
+1397608919 d:\programming\c++\engine\include\engine\glew.c
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+
+1440947828 d:\programming\c++\engine\include\engine\core\list.h
+	<string.h>
+
+1445554224 d:\programming\c++\engine\include\engine\core\view.h
+	"../core/double2.h"
+	"../core/int2.h"
+	"../graphics/drawable.h"
+	"../core/camera.h"
+	"../ui/indui.h"
+	"../graphics/shader.h"
+
+1448821603 d:\programming\c++\engine\include\engine\core\double2.h
+	<math.h>
+
+1324663940 d:\programming\c++\engine\include\engine\core\int2.h
+
+1447720239 d:\programming\c++\engine\include\engine\graphics\drawable.h
+	"../core/node.h"
+	"../graphics/mesh.h"
+
+1456372953 d:\programming\c++\engine\include\engine\core\node.h
+	"list.h"
+	"ordered_list.h"
+	"input.h"
+	"node_message.h"
+	"../graphics/window_properties.h"
+	"string_util.h"
+	"../ui/induicontextmenu.h"
+
+1455064485 d:\programming\c++\engine\include\engine\core\ordered_list.h
+	"list.h"
+
+1440947675 d:\programming\c++\engine\include\engine\core\input.h
+	"int2.h"
+	"double2.h"
+
+1009862690 d:\programming\c++\engine\include\engine\core\node_message.h
+
+1428861978 d:\programming\c++\engine\include\engine\graphics\window_properties.h
+	"../core/view.h"
+
+1439646327 d:\programming\c++\engine\include\engine\core\string_util.h
+	<string.h>
+	"double3.h"
+	<sstream>
+
+1445558459 d:\programming\c++\engine\include\engine\core\double3.h
+	<limits>
+	<math.h>
+
+1428857446 d:\programming\c++\engine\include\engine\ui\induicontextmenu.h
+	"induimod.h"
+
+1428857397 d:\programming\c++\engine\include\engine\ui\induimod.h
+	"../graphics/glvectortext.h"
+	"induiwidget.h"
+
+1416881993 d:\programming\c++\engine\include\engine\graphics\glvectortext.h
+
+1416883972 d:\programming\c++\engine\include\engine\ui\induiwidget.h
+
+1429654420 d:\programming\c++\engine\include\engine\graphics\mesh.h
+	"../core/quaternion.h"
+	"../graphics/drawable.h"
+	"../graphics/polygon.h"
+	"../graphics/material.h"
+	"../core/map.h"
+	<ode/ode.h>
+
+1442151654 d:\programming\c++\engine\include\engine\core\quaternion.h
+	<math.h>
+	"double3.h"
+	"double4x4.h"
+
+1367443944 d:\programming\c++\engine\include\engine\core\double4x4.h
+
+1439404767 d:\programming\c++\engine\include\engine\graphics\polygon.h
+	"../core/double3.h"
+	"gl/gl.h"
+
+1415152246 d:\programming\c++\engine\include\engine\graphics\material.h
+	"../core/double3.h"
+	<string.h>
+
+1428864752 d:\programming\c++\engine\include\engine\core\map.h
+	<string>
+	"list.h"
+	"string_util.h"
+
+1440459850 d:\programming\c++\engine\include\engine\core\camera.h
+	"../core/double3.h"
+	"../core/quaternion.h"
+	"../core/node.h"
+	"../core/int2.h"
+	"../core/controller.h"
+	"../core/var_map.h"
+	"../core/controllable.h"
+
+1428871663 d:\programming\c++\engine\include\engine\core\controller.h
+	"../core/double3.h"
+	"../core/action.h"
+	"../core/event.h"
+	"../core/node.h"
+
+1407369615 d:\programming\c++\engine\include\engine\core\action.h
+
+1407376514 d:\programming\c++\engine\include\engine\core\event.h
+	"list.h"
+	"condition.h"
+	"node.h"
+	"action.h"
+
+1406334836 d:\programming\c++\engine\include\engine\core\condition.h
+
+1455069699 d:\programming\c++\engine\include\engine\core\var_map.h
+	"map.h"
+	<typeinfo>
+	<iostream>
+	<fstream>
+	<string>
+	"string_util.h"
+
+1421980728 d:\programming\c++\engine\include\engine\core\controllable.h
+	"../core/controller.h"
+	"../input/keyboard_mouse.h"
+
+1428872751 d:\programming\c++\engine\include\engine\input\keyboard_mouse.h
+	"../core/input.h"
+	"../core/controller.h"
+
+1428857125 d:\programming\c++\engine\include\engine\ui\indui.h
+	<string.h>
+	"../graphics/glvectortext.h"
+	"induimod.h"
+
+1397609560 d:\programming\c++\engine\include\engine\graphics\shader.h
+	<cstdlib>
+	<fstream>
+
+1456372307 d:\programming\c++\engine\include\engine\core\asset_library.h
+	"../core/map.h"
+	"../core/thread_safe_list.h"
+	"loader.h"
+	"../load/obj.h"
+	"../load/image.h"
+	"../core/controller.h"
+	"../input/keyboard_mouse.h"
+	"../core/string_util.h"
+	"../graphics/draw_mesh.h"
+
+1414939252 d:\programming\c++\engine\include\engine\core\thread_safe_list.h
+	"list.h"
+
+1417875616 d:\programming\c++\engine\include\engine\core\loader.h
+	"thread.h"
+	"map.h"
+	"../load/dependency.h"
+	"../core/var_map.h"
+
+1414705428 d:\programming\c++\engine\include\engine\core\thread.h
+	<windows.h>
+	<process.h>
+
+1415232641 d:\programming\c++\engine\include\engine\load\dependency.h
+	"../core/loader.h"
+
+1422404590 d:\programming\c++\engine\include\engine\load\obj.h
+	"../core/loader.h"
+	"../core/list.h"
+	"../graphics/mesh.h"
+	"../graphics/drawable.h"
+	"../graphics/texture.h"
+	<iostream>
+	<fstream>
+	<string>
+	"../core/string_util.h"
+
+1415059683 d:\programming\c++\engine\include\engine\graphics\texture.h
+	"../graphics/gl_structs.h"
+	"../core/int2.h"
+	<GL/glfw.h>
+	<GL/glu.h>
+	"FreeImage.h"
+
+1439404812 d:\programming\c++\engine\include\engine\graphics\gl_structs.h
+	<cstdlib>
+	<fstream>
+
+1395193969 d:\programming\c++\engine\include\engine\graphics\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1429655691 d:\programming\c++\engine\include\engine\load\image.h
+	"../core/loader.h"
+	<string>
+	"../core/string_util.h"
+	"../graphics/texture.h"
+	"../graphics/FreeImage.h"
+
+1419983533 d:\programming\c++\engine\include\engine\graphics\draw_mesh.h
+	"../graphics/mesh.h"
+
+1445569458 d:\programming\c++\engine\include\engine\physics\ode.h
+	<ode/ode.h>
+	"../physics/ode_utils.h"
+	"../core/double3.h"
+	"../graphics/gl_structs.h"
+	"collision.h"
+	"../core/physical.h"
+	"../core/float3x3.h"
+
+1411777487 d:\programming\c++\engine\include\engine\physics\ode_utils.h
+	"../core/double3.h"
+
+1422403321 d:\programming\c++\engine\include\engine\physics\collision.h
+
+1009862152 d:\programming\c++\engine\include\engine\core\physical.h
+	"../core/node.h"
+	"../physics/impact.h"
+	<ode/objects.h>
+
+1383013367 d:\programming\c++\engine\include\engine\physics\impact.h
+
+1445565872 d:\programming\c++\engine\include\engine\core\float3x3.h
+	"double3.h"
+
+1455069486 d:\programming\c++\engine\include\engine\core\engine_setup.h
+	"var_map.h"
+	"view.h"
+	"event.h"
+	"action.h"
+	"actions/send_message.h"
+	"camera.h"
+	"../graphics/shader.h"
+
+1407375213 d:\programming\c++\engine\include\engine\core\actions\send_message.h
+	"../action.h"
+
+1445567592 d:\programming\c++\engine\include\engine\graphics\floating_camera.h
+	"../core/camera.h"
+
+1440459878 d:\programming\c++\engine\include\engine\graphics\fpse_camera.h
+	"../core/camera.h"
+
+1455065160 d:\programming\c++\engine\include\engine\graphics\attached_camera.h
+	"../core/camera.h"
+
+1440459871 d:\programming\c++\engine\include\engine\graphics\fps_camera.h
+	"../core/camera.h"
+
+1431265557 d:\programming\c++\engine\include\engine\core\timer.h
+	<windows.h>
+
+1456373323 d:\programming\c++\engine\include\engine\core\engine_control.h
+	<iostream>
+	<fstream>
+	"window.h"
+	"view.h"
+	"camera.h"
+	"loader.h"
+	"../load/obj.h"
+	"../graphics/drawable.h"
+	"../core/asset_library.h"
+	"../core/depth_click.h"
+	"../core/engine_setup.h"
+
+1422573833 d:\programming\c++\engine\include\engine\core\depth_click.h
+	"../core/double3.h"
+	"../graphics/gl_util.h"
+	"../core/camera.h"
+
+1418086709 d:\programming\c++\engine\include\engine\graphics\gl_util.h
+
+1418051624 d:\programming\c++\engine\include\engine\control\loading_screen.h
+	"../core/engine_control.h"
+	"../nodes/decoration.h"
+	"loading_screen/loading_screen_progress.h"
+	"loading_screen/progress_load_bar.h"
+	"../core/conditions/is_more_than.h"
+	"../core/actions/send_message.h"
+
+1414940096 d:\programming\c++\engine\include\engine\nodes\decoration.h
+	"../graphics/drawable.h"
+	"../graphics/mesh.h"
+	"../load/obj.h"
+
+1406333808 d:\programming\c++\engine\include\engine\control\loading_screen\loading_screen_progress.h
+
+1406333882 d:\programming\c++\engine\include\engine\control\loading_screen\progress_load_bar.h
+	"loading_screen_progress.h"
+
+1406335649 d:\programming\c++\engine\include\engine\core\conditions\is_more_than.h
+	"../condition.h"
+
+1447720486 d:\programming\c++\engine\include\engine\control\dataviewer.h
+	"../core/engine_control.h"
+	"../ui/induimod.h"
+	"../ui/induidock.h"
+	"../ui/induifilebrowser.h"
+	"../ui/induicontextmenu.h"
+	"../ui/induitextbox.h"
+	"../ui/induinumberbox.h"
+	"../ui/induibutton.h"
+	"../ui/induidropdown.h"
+	"dataviewer/lbrgraph.h"
+	"dataviewer/dataviewer_main_menu_functions.h"
+
+1419985281 d:\programming\c++\engine\include\engine\ui\induidock.h
+	"induimod.h"
+
+1417387712 d:\programming\c++\engine\include\engine\ui\induifilebrowser.h
+	"../ui/induimod.h"
+
+1416873640 d:\programming\c++\engine\include\engine\ui\induitextbox.h
+	"induiwidget.h"
+	"../graphics/glvectortext.h"
+
+1420162000 d:\programming\c++\engine\include\engine\ui\induinumberbox.h
+	"induiwidget.h"
+	"../graphics/glvectortext.h"
+
+1416882684 d:\programming\c++\engine\include\engine\ui\induibutton.h
+	"induiwidget.h"
+	"../graphics/glvectortext.h"
+
+1422404752 d:\programming\c++\engine\include\engine\ui\induidropdown.h
+	"induiwidget.h"
+	"../graphics/glvectortext.h"
+	"indui_optionselection.h"
+	"indui_optionfunction.h"
+
+1422405005 d:\programming\c++\engine\include\engine\ui\indui_optionselection.h
+
+1417386085 d:\programming\c++\engine\include\engine\ui\indui_optionfunction.h
+
+1449282043 d:\programming\c++\engine\include\engine\control\dataviewer\lbrgraph.h
+	"lbr.h"
+	"lbrdatastream.h"
+
+1449416777 d:\programming\c++\engine\include\engine\control\dataviewer\lbr.h
+	<iostream>
+	<fstream>
+	<bitset>
+	"../../core/double3.h"
+	"../../core/ordered_list.h"
+
+1449282141 d:\programming\c++\engine\include\engine\control\dataviewer\lbrdatastream.h
+	"../../graphics/drawable.h"
+	<limits>
+
+1447720408 d:\programming\c++\engine\include\engine\control\dataviewer\dataviewer_main_menu_functions.h
+
+1009863964 d:\programming\c++\engine\include\engine\control\fps.h
+	"../include_list/fps.h"
+
+1455065245 d:\programming\c++\engine\include\engine\include_list\fps.h
+	"../nodes/decoration.h"
+	"../nodes/skybox.h"
+	"../nodes/crate.h"
+	"../nodes/infinite_plane.h"
+	"../nodes/ground.h"
+	"../ai/n_path.h"
+	"../nodes/spawner.h"
+	"../nodes/marker.h"
+	"../nodes/fps_player.h"
+	"../nodes/barrel.h"
+	"../nodes/weapons/ak47.h"
+	"../nodes/weapons/glock19.h"
+	"../nodes/pickup.h"
+	"../nodes/fire.h"
+	"../physics/portal.h"
+	"../core/vehicle.h"
+
+1414858555 d:\programming\c++\engine\include\engine\nodes\skybox.h
+	"../graphics/drawable.h"
+
+1440461165 d:\programming\c++\engine\include\engine\nodes\crate.h
+	"../physics/physical_single_body.h"
+
+1440118818 d:\programming\c++\engine\include\engine\physics\physical_single_body.h
+	"../core/physical.h"
+
+1445561044 d:\programming\c++\engine\include\engine\nodes\infinite_plane.h
+	"../core/physical.h"
+
+1009866769 d:\programming\c++\engine\include\engine\nodes\ground.h
+	"../core/physical.h"
+
+1415942949 d:\programming\c++\engine\include\engine\ai\n_path.h
+	"../physics/ode.h"
+	"../core/physical.h"
+
+1440973545 d:\programming\c++\engine\include\engine\nodes\spawner.h
+	"../nodes/marker.h"
+	"../graphics/gl_shape.h"
+	"../core/random.h"
+
+1443136470 d:\programming\c++\engine\include\engine\nodes\marker.h
+	"../core/physical.h"
+
+1445567224 d:\programming\c++\engine\include\engine\graphics\gl_shape.h
+	"mesh.h"
+
+1440971188 d:\programming\c++\engine\include\engine\core\random.h
+	<cstdlib>
+	"double3.h"
+
+1009865471 d:\programming\c++\engine\include\engine\nodes\fps_player.h
+	"../core/actor.h"
+	"../physics/contact_settings.h"
+
+1443136201 d:\programming\c++\engine\include\engine\core\actor.h
+	"../core/prop.h"
+	"../physics/physical_single_body.h"
+	"../core/controllable.h"
+
+1439647591 d:\programming\c++\engine\include\engine\core\prop.h
+	"../core/controllable.h"
+
+1374101465 d:\programming\c++\engine\include\engine\physics\contact_settings.h
+
+1429667450 d:\programming\c++\engine\include\engine\nodes\barrel.h
+	"../physics/physical_single_body.h"
+
+1440189747 d:\programming\c++\engine\include\engine\nodes\weapons\ak47.h
+	"../../core/projectile_weapon.h"
+	"../projectiles/bullet762x39mm.h"
+
+1440120887 d:\programming\c++\engine\include\engine\core\projectile_weapon.h
+	"../core/prop.h"
+
+1440122565 d:\programming\c++\engine\include\engine\nodes\projectiles\bullet762x39mm.h
+	"bullet.h"
+
+1009866904 d:\programming\c++\engine\include\engine\nodes\projectiles\bullet.h
+	"../../core/projectile.h"
+
+1440122852 d:\programming\c++\engine\include\engine\core\projectile.h
+	"../core/physical.h"
+
+1440121675 d:\programming\c++\engine\include\engine\nodes\weapons\glock19.h
+	"../../core/projectile_weapon.h"
+	"../projectiles/bullet9mm.h"
+
+1439649524 d:\programming\c++\engine\include\engine\nodes\projectiles\bullet9mm.h
+	"bullet.h"
+
+1009867367 d:\programming\c++\engine\include\engine\nodes\pickup.h
+	"../physics/collision_trigger.h"
+
+1444870807 d:\programming\c++\engine\include\engine\physics\collision_trigger.h
+	"../nodes/marker.h"
+	"../core/trigger.h"
+
+1424389221 d:\programming\c++\engine\include\engine\core\trigger.h
+
+1440973595 d:\programming\c++\engine\include\engine\nodes\fire.h
+	"spawner.h"
+	"particles/flame.h"
+
+1440976998 d:\programming\c++\engine\include\engine\nodes\particles\flame.h
+	"../particle.h"
+
+1444869737 d:\programming\c++\engine\include\engine\nodes\particle.h
+
+1444869958 d:\programming\c++\engine\include\engine\physics\portal.h
+	"../physics/collision_trigger.h"
+
+1445305693 d:\programming\c++\engine\include\engine\core\vehicle.h
+	"physical.h"
+	"controllable.h"
+
+1456074577 source:n:\programming\c++\engine\main.cpp
+	"include/engine/engine.h"
+
+1456376320 n:\programming\c++\engine\include\engine\engine.h
+	<iostream>
+	"core/window.h"
+	"core/asset_library.h"
+	"core/node.h"
+	"physics/ode.h"
+	"core/engine_setup.h"
+	"ui/indui.h"
+	"core/timer.h"
+	"core/engine_control.h"
+	"control/loading_screen.h"
+	"control/fps.h"
+
+1456376102 n:\programming\c++\engine\include\engine\core\window.h
+	"../glew.c"
+	<GL/glfw.h>
+	<GL/glu.h>
+	"../core/list.h"
+	"../core/view.h"
+	"../core/node.h"
+
+1397612519 n:\programming\c++\engine\include\engine\glew.c
+	<GL/glew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+
+1440951428 n:\programming\c++\engine\include\engine\core\list.h
+	<string.h>
+
+1458607812 n:\programming\c++\engine\include\engine\core\view.h
+	"../core/double2.h"
+	"../core/int2.h"
+	"../graphics/drawable.h"
+	"../core/camera.h"
+	"../ui/indui.h"
+	"../graphics/shader.h"
+
+1448825203 n:\programming\c++\engine\include\engine\core\double2.h
+	<math.h>
+
+1324667540 n:\programming\c++\engine\include\engine\core\int2.h
+
+1447723839 n:\programming\c++\engine\include\engine\graphics\drawable.h
+	"../core/node.h"
+	"../graphics/mesh.h"
+
+1456376553 n:\programming\c++\engine\include\engine\core\node.h
+	"list.h"
+	"ordered_list.h"
+	"input.h"
+	"node_message.h"
+	"../graphics/window_properties.h"
+	"string_util.h"
+	"../ui/induicontextmenu.h"
+
+1455068085 n:\programming\c++\engine\include\engine\core\ordered_list.h
+	"list.h"
+
+1440951275 n:\programming\c++\engine\include\engine\core\input.h
+	"int2.h"
+	"double2.h"
+
+1009866290 n:\programming\c++\engine\include\engine\core\node_message.h
+
+1428865578 n:\programming\c++\engine\include\engine\graphics\window_properties.h
+	"../core/view.h"
+
+1439649927 n:\programming\c++\engine\include\engine\core\string_util.h
+	<string.h>
+	"double3.h"
+	<sstream>
+
+1445562059 n:\programming\c++\engine\include\engine\core\double3.h
+	<limits>
+	<math.h>
+
+1428861046 n:\programming\c++\engine\include\engine\ui\induicontextmenu.h
+	"induimod.h"
+
+1428860997 n:\programming\c++\engine\include\engine\ui\induimod.h
+	"../graphics/glvectortext.h"
+	"induiwidget.h"
+
+1416885593 n:\programming\c++\engine\include\engine\graphics\glvectortext.h
+
+1416887572 n:\programming\c++\engine\include\engine\ui\induiwidget.h
+
+1429658020 n:\programming\c++\engine\include\engine\graphics\mesh.h
+	"../core/quaternion.h"
+	"../graphics/drawable.h"
+	"../graphics/polygon.h"
+	"../graphics/material.h"
+	"../core/map.h"
+	<ode/ode.h>
+
+1442155254 n:\programming\c++\engine\include\engine\core\quaternion.h
+	<math.h>
+	"double3.h"
+	"double4x4.h"
+
+1367447544 n:\programming\c++\engine\include\engine\core\double4x4.h
+
+1439408367 n:\programming\c++\engine\include\engine\graphics\polygon.h
+	"../core/double3.h"
+	"gl/gl.h"
+
+1415155846 n:\programming\c++\engine\include\engine\graphics\material.h
+	"../core/double3.h"
+	<string.h>
+
+1428868352 n:\programming\c++\engine\include\engine\core\map.h
+	<string>
+	"list.h"
+	"string_util.h"
+
+1440463450 n:\programming\c++\engine\include\engine\core\camera.h
+	"../core/double3.h"
+	"../core/quaternion.h"
+	"../core/node.h"
+	"../core/int2.h"
+	"../core/controller.h"
+	"../core/var_map.h"
+	"../core/controllable.h"
+
+1428875263 n:\programming\c++\engine\include\engine\core\controller.h
+	"../core/double3.h"
+	"../core/action.h"
+	"../core/event.h"
+	"../core/node.h"
+
+1407373215 n:\programming\c++\engine\include\engine\core\action.h
+
+1407380114 n:\programming\c++\engine\include\engine\core\event.h
+	"list.h"
+	"condition.h"
+	"node.h"
+	"action.h"
+
+1406338436 n:\programming\c++\engine\include\engine\core\condition.h
+
+1455073299 n:\programming\c++\engine\include\engine\core\var_map.h
+	"map.h"
+	<typeinfo>
+	<iostream>
+	<fstream>
+	<string>
+	"string_util.h"
+
+1421984328 n:\programming\c++\engine\include\engine\core\controllable.h
+	"../core/controller.h"
+	"../input/keyboard_mouse.h"
+
+1428876351 n:\programming\c++\engine\include\engine\input\keyboard_mouse.h
+	"../core/input.h"
+	"../core/controller.h"
+
+1428860725 n:\programming\c++\engine\include\engine\ui\indui.h
+	<string.h>
+	"../graphics/glvectortext.h"
+	"induimod.h"
+
+1397613160 n:\programming\c++\engine\include\engine\graphics\shader.h
+	<cstdlib>
+	<fstream>
+
+1456375907 n:\programming\c++\engine\include\engine\core\asset_library.h
+	"../core/map.h"
+	"../core/thread_safe_list.h"
+	"loader.h"
+	"../load/obj.h"
+	"../load/image.h"
+	"../core/controller.h"
+	"../input/keyboard_mouse.h"
+	"../core/string_util.h"
+	"../graphics/draw_mesh.h"
+
+1414942852 n:\programming\c++\engine\include\engine\core\thread_safe_list.h
+	"list.h"
+
+1417879216 n:\programming\c++\engine\include\engine\core\loader.h
+	"thread.h"
+	"map.h"
+	"../load/dependency.h"
+	"../core/var_map.h"
+
+1414709028 n:\programming\c++\engine\include\engine\core\thread.h
+	<windows.h>
+	<process.h>
+
+1415236241 n:\programming\c++\engine\include\engine\load\dependency.h
+	"../core/loader.h"
+
+1422408190 n:\programming\c++\engine\include\engine\load\obj.h
+	"../core/loader.h"
+	"../core/list.h"
+	"../graphics/mesh.h"
+	"../graphics/drawable.h"
+	"../graphics/texture.h"
+	<iostream>
+	<fstream>
+	<string>
+	"../core/string_util.h"
+
+1415063283 n:\programming\c++\engine\include\engine\graphics\texture.h
+	"../graphics/gl_structs.h"
+	"../core/int2.h"
+	<GL/glfw.h>
+	<GL/glu.h>
+	"FreeImage.h"
+
+1439408412 n:\programming\c++\engine\include\engine\graphics\gl_structs.h
+	<cstdlib>
+	<fstream>
+
+1395197569 n:\programming\c++\engine\include\engine\graphics\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1429659291 n:\programming\c++\engine\include\engine\load\image.h
+	"../core/loader.h"
+	<string>
+	"../core/string_util.h"
+	"../graphics/texture.h"
+	"../graphics/FreeImage.h"
+
+1419987133 n:\programming\c++\engine\include\engine\graphics\draw_mesh.h
+	"../graphics/mesh.h"
+
+1445573058 n:\programming\c++\engine\include\engine\physics\ode.h
+	<ode/ode.h>
+	"../physics/ode_utils.h"
+	"../core/double3.h"
+	"../graphics/gl_structs.h"
+	"collision.h"
+	"../core/physical.h"
+	"../core/float3x3.h"
+
+1411781087 n:\programming\c++\engine\include\engine\physics\ode_utils.h
+	"../core/double3.h"
+
+1422406921 n:\programming\c++\engine\include\engine\physics\collision.h
+
+1009865752 n:\programming\c++\engine\include\engine\core\physical.h
+	"../core/node.h"
+	"../physics/impact.h"
+	<ode/objects.h>
+
+1383016967 n:\programming\c++\engine\include\engine\physics\impact.h
+
+1445569472 n:\programming\c++\engine\include\engine\core\float3x3.h
+	"double3.h"
+
+1455073086 n:\programming\c++\engine\include\engine\core\engine_setup.h
+	"var_map.h"
+	"view.h"
+	"event.h"
+	"action.h"
+	"actions/send_message.h"
+	"camera.h"
+	"../graphics/shader.h"
+
+1407378813 n:\programming\c++\engine\include\engine\core\actions\send_message.h
+	"../action.h"
+
+1431269157 n:\programming\c++\engine\include\engine\core\timer.h
+	<windows.h>
+
+1456376923 n:\programming\c++\engine\include\engine\core\engine_control.h
+	<iostream>
+	<fstream>
+	"window.h"
+	"view.h"
+	"camera.h"
+	"loader.h"
+	"../load/obj.h"
+	"../graphics/drawable.h"
+	"../core/asset_library.h"
+	"../core/depth_click.h"
+	"../core/engine_setup.h"
+
+1422577433 n:\programming\c++\engine\include\engine\core\depth_click.h
+	"../core/double3.h"
+	"../graphics/gl_util.h"
+	"../core/camera.h"
+
+1418090309 n:\programming\c++\engine\include\engine\graphics\gl_util.h
+
+1418055224 n:\programming\c++\engine\include\engine\control\loading_screen.h
+	"../core/engine_control.h"
+	"../nodes/decoration.h"
+	"loading_screen/loading_screen_progress.h"
+	"loading_screen/progress_load_bar.h"
+	"../core/conditions/is_more_than.h"
+	"../core/actions/send_message.h"
+
+1414943696 n:\programming\c++\engine\include\engine\nodes\decoration.h
+	"../graphics/drawable.h"
+	"../graphics/mesh.h"
+	"../load/obj.h"
+
+1406337408 n:\programming\c++\engine\include\engine\control\loading_screen\loading_screen_progress.h
+
+1406337482 n:\programming\c++\engine\include\engine\control\loading_screen\progress_load_bar.h
+	"loading_screen_progress.h"
+
+1406339249 n:\programming\c++\engine\include\engine\core\conditions\is_more_than.h
+	"../condition.h"
+
+1009867564 n:\programming\c++\engine\include\engine\control\fps.h
+	"../include_list/fps.h"
+
+1455068845 n:\programming\c++\engine\include\engine\include_list\fps.h
+	"../nodes/decoration.h"
+	"../nodes/skybox.h"
+	"../nodes/crate.h"
+	"../nodes/infinite_plane.h"
+	"../nodes/ground.h"
+	"../ai/n_path.h"
+	"../nodes/spawner.h"
+	"../nodes/marker.h"
+	"../nodes/fps_player.h"
+	"../nodes/barrel.h"
+	"../nodes/weapons/ak47.h"
+	"../nodes/weapons/glock19.h"
+	"../nodes/pickup.h"
+	"../nodes/fire.h"
+	"../physics/portal.h"
+	"../core/vehicle.h"
+
+1414862155 n:\programming\c++\engine\include\engine\nodes\skybox.h
+	"../graphics/drawable.h"
+
+1440464765 n:\programming\c++\engine\include\engine\nodes\crate.h
+	"../physics/physical_single_body.h"
+
+1440122418 n:\programming\c++\engine\include\engine\physics\physical_single_body.h
+	"../core/physical.h"
+
+1445564644 n:\programming\c++\engine\include\engine\nodes\infinite_plane.h
+	"../core/physical.h"
+
+1009870369 n:\programming\c++\engine\include\engine\nodes\ground.h
+	"../core/physical.h"
+
+1415946549 n:\programming\c++\engine\include\engine\ai\n_path.h
+	"../physics/ode.h"
+	"../core/physical.h"
+
+1440977145 n:\programming\c++\engine\include\engine\nodes\spawner.h
+	"../nodes/marker.h"
+	"../graphics/gl_shape.h"
+	"../core/random.h"
+
+1443140070 n:\programming\c++\engine\include\engine\nodes\marker.h
+	"../core/physical.h"
+
+1445570824 n:\programming\c++\engine\include\engine\graphics\gl_shape.h
+	"mesh.h"
+
+1440974788 n:\programming\c++\engine\include\engine\core\random.h
+	<cstdlib>
+	"double3.h"
+
+1009869071 n:\programming\c++\engine\include\engine\nodes\fps_player.h
+	"../core/actor.h"
+	"../physics/contact_settings.h"
+
+1443139801 n:\programming\c++\engine\include\engine\core\actor.h
+	"../core/prop.h"
+	"../physics/physical_single_body.h"
+	"../core/controllable.h"
+
+1439651191 n:\programming\c++\engine\include\engine\core\prop.h
+	"../core/controllable.h"
+
+1374105065 n:\programming\c++\engine\include\engine\physics\contact_settings.h
+
+1429671050 n:\programming\c++\engine\include\engine\nodes\barrel.h
+	"../physics/physical_single_body.h"
+
+1440193347 n:\programming\c++\engine\include\engine\nodes\weapons\ak47.h
+	"../../core/projectile_weapon.h"
+	"../projectiles/bullet762x39mm.h"
+
+1440124487 n:\programming\c++\engine\include\engine\core\projectile_weapon.h
+	"../core/prop.h"
+
+1440126165 n:\programming\c++\engine\include\engine\nodes\projectiles\bullet762x39mm.h
+	"bullet.h"
+
+1009870504 n:\programming\c++\engine\include\engine\nodes\projectiles\bullet.h
+	"../../core/projectile.h"
+
+1440126452 n:\programming\c++\engine\include\engine\core\projectile.h
+	"../core/physical.h"
+
+1440125275 n:\programming\c++\engine\include\engine\nodes\weapons\glock19.h
+	"../../core/projectile_weapon.h"
+	"../projectiles/bullet9mm.h"
+
+1439653124 n:\programming\c++\engine\include\engine\nodes\projectiles\bullet9mm.h
+	"bullet.h"
+
+1009870967 n:\programming\c++\engine\include\engine\nodes\pickup.h
+	"../physics/collision_trigger.h"
+
+1444874407 n:\programming\c++\engine\include\engine\physics\collision_trigger.h
+	"../nodes/marker.h"
+	"../core/trigger.h"
+
+1424392821 n:\programming\c++\engine\include\engine\core\trigger.h
+
+1440977195 n:\programming\c++\engine\include\engine\nodes\fire.h
+	"spawner.h"
+	"particles/flame.h"
+
+1440980598 n:\programming\c++\engine\include\engine\nodes\particles\flame.h
+	"../particle.h"
+
+1444873337 n:\programming\c++\engine\include\engine\nodes\particle.h
+
+1444873558 n:\programming\c++\engine\include\engine\physics\portal.h
+	"../physics/collision_trigger.h"
+
+1445309293 n:\programming\c++\engine\include\engine\core\vehicle.h
+	"physical.h"
+	"controllable.h"
+

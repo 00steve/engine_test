@@ -1,0 +1,13 @@
+varying vec4 diffuse; 
+void main() 
+{ 
+  gl_Position = ftransform(); 
+  gl_TexCoord[0] = gl_TextureMatrix[0] * gl_MultiTexCoord0;    
+//vec3 normal = gl_NormalMatrix * gl_Normal; 
+// Usually your lights won't be in world space, so you have to multiply the normal by the normal matrix to have it in world space. 
+vec3 normal = gl_Normal; // Normals are expected to be normalized. If they are not, do it here. 
+vec3 lightVector = normalize(gl_LightSource[0].position.xyz);  
+float nxDir = max(0.0, dot(normal, lightVector)); 
+// Normal x light direction.
+  diffuse = gl_LightSource[0].diffuse * nxDir;   
+}

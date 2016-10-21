@@ -1,0 +1,61 @@
+#store all of the settings of the fps
+
+controllers[
+	control01[
+		type keyboard-mouse
+		id input_01
+	]
+]
+
+
+
+physics[
+	step .01
+	fps 100
+	gravity 0,-9.81,0
+	auto-disable true
+	auto-disable-steps 10
+]
+
+map[
+	model "include/assets/models/01_the_beach/01_the_beach.obj"
+]
+
+views[
+	default[
+		location TOP_LEFT
+		x-offset 0
+		y-offset 0
+		width 1
+		height 1
+		shader shaded_fog
+		#shader d_light
+		camera firstperson
+		id default_view
+	]
+]
+		
+		
+# include any cameras that the controller should use
+# cameras are created, but not enabled by default.
+cameras[
+
+	firstperson[
+		type fps
+		position 0,240,10
+		enabled true
+		id fps_camera
+		clipping-plane-far 2000
+	]
+]
+
+
+objects[
+
+	car01[
+		type car
+		settings "include/assets/settings/test_car.evh"
+		camera fps_camera
+	]
+	
+]

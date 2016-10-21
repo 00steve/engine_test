@@ -1,0 +1,5 @@
+void main ()
+{
+	float z = gl_FragCoord.z / gl_FragCoord.w / 250;
+	gl_FragColor = vec4(z,z,z,1);
+}

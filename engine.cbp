@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-lfreeimage" />
+			<Add library="ode" />
+			<Add library="glew32" />
+			<Add library="glfw" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="mingw32" />
+		</Linker>
+		<Unit filename="include/assets/shaders/depth_fragment.txt" />
+		<Unit filename="include/assets/shaders/depth_vertex.txt" />
+		<Unit filename="include/assets/shaders/fog_fragment.txt" />
+		<Unit filename="include/assets/shaders/fog_vertex.txt" />
+		<Unit filename="include/assets/shaders/simple1_fragment.txt" />
+		<Unit filename="include/assets/shaders/simple1_vertex.txt" />
+		<Unit filename="include/assets/shaders/texture_fragment.txt" />
+		<Unit filename="include/assets/shaders/texture_vertex.txt" />
+		<Unit filename="include/engine/ai/n_path.h" />
+		<Unit filename="include/engine/control/dataviewer.h" />
+		<Unit filename="include/engine/control/dataviewer/dataviewer_main_menu_functions.h" />
+		<Unit filename="include/engine/control/dataviewer/lbr.h" />
+		<Unit filename="include/engine/control/dataviewer/lbrdatapoint.h" />
+		<Unit filename="include/engine/control/dataviewer/lbrdatastream.h" />
+		<Unit filename="include/engine/control/dataviewer/lbrdatastream2d.h" />
+		<Unit filename="include/engine/control/dataviewer/lbrgraph.h" />
+		<Unit filename="include/engine/control/file_browser_3d.h" />
+		<Unit filename="include/engine/control/fps.h" />
+		<Unit filename="include/engine/control/fpse.h" />
+		<Unit filename="include/engine/control/fpse/fpse_context_menus.h" />
+		<Unit filename="include/engine/control/fpse/fpse_main_menu_functions.h" />
+		<Unit filename="include/engine/control/fpse/fpse_object_menu_functions.h" />
+		<Unit filename="include/engine/control/loading_screen.h" />
+		<Unit filename="include/engine/control/loading_screen/loading_screen_progress.h" />
+		<Unit filename="include/engine/control/loading_screen/progress_load_bar.h" />
+		<Unit filename="include/engine/control/menu_screen.h" />
+		<Unit filename="include/engine/control/race.h" />
+		<Unit filename="include/engine/core/action.h" />
+		<Unit filename="include/engine/core/actions/send_message.h" />
+		<Unit filename="include/engine/core/actor.h" />
+		<Unit filename="include/engine/core/asset_library.h" />
+		<Unit filename="include/engine/core/camera.h" />
+		<Unit filename="include/engine/core/condition.h" />
+		<Unit filename="include/engine/core/conditions/is_more_than.h" />
+		<Unit filename="include/engine/core/const.h" />
+		<Unit filename="include/engine/core/controllable.h" />
+		<Unit filename="include/engine/core/controller.h" />
+		<Unit filename="include/engine/core/depth_click.h" />
+		<Unit filename="include/engine/core/double2.h" />
+		<Unit filename="include/engine/core/double3.h" />
+		<Unit filename="include/engine/core/double4x4.h" />
+		<Unit filename="include/engine/core/engine_control.h" />
+		<Unit filename="include/engine/core/engine_setup.h" />
+		<Unit filename="include/engine/core/event.h" />
+		<Unit filename="include/engine/core/float3x3.h" />
+		<Unit filename="include/engine/core/input.h" />
+		<Unit filename="include/engine/core/int2.h" />
+		<Unit filename="include/engine/core/list.h" />
+		<Unit filename="include/engine/core/loader.h" />
+		<Unit filename="include/engine/core/map.h" />
+		<Unit filename="include/engine/core/node.h" />
+		<Unit filename="include/engine/core/node_message.h" />
+		<Unit filename="include/engine/core/ordered_list.h" />
+		<Unit filename="include/engine/core/physical.h" />
+		<Unit filename="include/engine/core/projectile.h" />
+		<Unit filename="include/engine/core/projectile_weapon.h" />
+		<Unit filename="include/engine/core/prop.h" />
+		<Unit filename="include/engine/core/quaternion.h" />
+		<Unit filename="include/engine/core/random.h" />
+		<Unit filename="include/engine/core/string_util.h" />
+		<Unit filename="include/engine/core/thread.h" />
+		<Unit filename="include/engine/core/thread_safe_list.h" />
+		<Unit filename="include/engine/core/timer.h" />
+		<Unit filename="include/engine/core/trigger.h" />
+		<Unit filename="include/engine/core/type-map.h" />
+		<Unit filename="include/engine/core/updatable.h" />
+		<Unit filename="include/engine/core/var_map.h" />
+		<Unit filename="include/engine/core/vehicle.h" />
+		<Unit filename="include/engine/core/view.h" />
+		<Unit filename="include/engine/core/window.h" />
+		<Unit filename="include/engine/engine.h" />
+		<Unit filename="include/engine/file/file_computer.h" />
+		<Unit filename="include/engine/file/file_drive.h" />
+		<Unit filename="include/engine/file/file_file.h" />
+		<Unit filename="include/engine/file/file_folder.h" />
+		<Unit filename="include/engine/file/file_item.h" />
+		<Unit filename="include/engine/graphics/attached_camera.h" />
+		<Unit filename="include/engine/graphics/billboard.h" />
+		<Unit filename="include/engine/graphics/draw_mesh.h" />
+		<Unit filename="include/engine/graphics/drawable.h" />
+		<Unit filename="include/engine/graphics/floating_camera.h" />
+		<Unit filename="include/engine/graphics/fps_camera.h" />
+		<Unit filename="include/engine/graphics/fpse_camera.h" />
+		<Unit filename="include/engine/graphics/gl_shape.h" />
+		<Unit filename="include/engine/graphics/gl_structs.h" />
+		<Unit filename="include/engine/graphics/gl_util.h" />
+		<Unit filename="include/engine/graphics/glvectortext.h" />
+		<Unit filename="include/engine/graphics/material.h" />
+		<Unit filename="include/engine/graphics/mesh.h" />
+		<Unit filename="include/engine/graphics/polygon.h" />
+		<Unit filename="include/engine/graphics/shader.h" />
+		<Unit filename="include/engine/graphics/texture.h" />
+		<Unit filename="include/engine/graphics/window_properties.h" />
+		<Unit filename="include/engine/include_list/fps.h" />
+		<Unit filename="include/engine/input/keyboard_mouse.h" />
+		<Unit filename="include/engine/load/bmp.h" />
+		<Unit filename="include/engine/load/dependency.h" />
+		<Unit filename="include/engine/load/image.h" />
+		<Unit filename="include/engine/load/obj.h" />
+		<Unit filename="include/engine/nodes/barrel.h" />
+		<Unit filename="include/engine/nodes/car.h" />
+		<Unit filename="include/engine/nodes/crate.h" />
+		<Unit filename="include/engine/nodes/decoration.h" />
+		<Unit filename="include/engine/nodes/drag_widget.h" />
+		<Unit filename="include/engine/nodes/fire.h" />
+		<Unit filename="include/engine/nodes/force_sphere.h" />
+		<Unit filename="include/engine/nodes/fps_player.h" />
+		<Unit filename="include/engine/nodes/ground.h" />
+		<Unit filename="include/engine/nodes/health_pack.h" />
+		<Unit filename="include/engine/nodes/infinite_plane.h" />
+		<Unit filename="include/engine/nodes/marker.h" />
+		<Unit filename="include/engine/nodes/particle.h" />
+		<Unit filename="include/engine/nodes/particles/flame.h" />
+		<Unit filename="include/engine/nodes/pickup.h" />
+		<Unit filename="include/engine/nodes/projectiles/bullet.h" />
+		<Unit filename="include/engine/nodes/projectiles/bullet762x39mm.h" />
+		<Unit filename="include/engine/nodes/projectiles/bullet9mm.h" />
+		<Unit filename="include/engine/nodes/projectiles/collision_gernade.h" />
+		<Unit filename="include/engine/nodes/projectiles/timed_gernade.h" />
+		<Unit filename="include/engine/nodes/selection_vector.h" />
+		<Unit filename="include/engine/nodes/skybox.h" />
+		<Unit filename="include/engine/nodes/spawner.h" />
+		<Unit filename="include/engine/nodes/turret.h" />
+		<Unit filename="include/engine/nodes/vehicle/macpherson_strut.h" />
+		<Unit filename="include/engine/nodes/weapons/ak47.h" />
+		<Unit filename="include/engine/nodes/weapons/gernade_launcher.h" />
+		<Unit filename="include/engine/nodes/weapons/glock19.h" />
+		<Unit filename="include/engine/physics/collision.h" />
+		<Unit filename="include/engine/physics/collision_trigger.h" />
+		<Unit filename="include/engine/physics/contact_settings.h" />
+		<Unit filename="include/engine/physics/force.h" />
+		<Unit filename="include/engine/physics/impact.h" />
+		<Unit filename="include/engine/physics/ode.h" />
+		<Unit filename="include/engine/physics/ode_node.h" />
+		<Unit filename="include/engine/physics/ode_utils.h" />
+		<Unit filename="include/engine/physics/physical_single_body.h" />
+		<Unit filename="include/engine/physics/portal.h" />
+		<Unit filename="include/engine/ui/indui.h" />
+		<Unit filename="include/engine/ui/indui_optionfunction.h" />
+		<Unit filename="include/engine/ui/indui_optionselection.h" />
+		<Unit filename="include/engine/ui/induibutton.h" />
+		<Unit filename="include/engine/ui/induicheckbox.h" />
+		<Unit filename="include/engine/ui/induicontextmenu.h" />
+		<Unit filename="include/engine/ui/induidock.h" />
+		<Unit filename="include/engine/ui/induidropdown.h" />
+		<Unit filename="include/engine/ui/induifilebrowser.h" />
+		<Unit filename="include/engine/ui/induilist.h" />
+		<Unit filename="include/engine/ui/induimod.h" />
+		<Unit filename="include/engine/ui/induinumberbox.h" />
+		<Unit filename="include/engine/ui/induislider.h" />
+		<Unit filename="include/engine/ui/induitextbox.h" />
+		<Unit filename="include/engine/ui/induiwidget.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot class_diagrams="1" />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
