@@ -83,7 +83,7 @@
 	"core/list.h"
 	"core/double3.h"
 
-1477084750 source:c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\assetlibrary.cpp
+1477090553 source:c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\assetlibrary.cpp
 	"assetlibrary.h"
 
 1477084950 c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\assetlibrary.h
@@ -106,7 +106,7 @@
 	<string>
 	"stringutil.h"
 
-1458260778 c:\program files (x86)\codeblocks\mingw\include\engine\core\map.h
+1477090260 c:\program files (x86)\codeblocks\mingw\include\engine\core\map.h
 	<string>
 	"list.h"
 	"stringutil.h"
@@ -129,13 +129,13 @@
 1461106850 c:\program files (x86)\codeblocks\mingw\include\engine\assetlibrary\dll.h
 	<windows.h>
 
-1461724911 c:\program files (x86)\codeblocks\mingw\include\engine\core\node.h
+1477091128 c:\program files (x86)\codeblocks\mingw\include\engine\core\node.h
 	<iostream>
-	"nodemessage.h"
-	"list.h"
-	"map.h"
-	"varmap.h"
-	"noderequest.h"
+	<engine/core/nodemessage.h>
+	<engine/core/list.h>
+	<engine/core/map.h>
+	<engine/core/varmap.h>
+	<engine/core/noderequest.h>
 
 1460899248 c:\program files (x86)\codeblocks\mingw\include\engine\core\nodemessage.h
 
@@ -150,7 +150,7 @@
 1477084038 c:\program files (x86)\codeblocks\mingw\include\engine\core\enginecontrol.h
 	"node.h"
 
-1461724831 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\node.cpp
+1477091152 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\node.cpp
 	"node.h"
 	"../assetlibrary/assetlibrary.h"
 
@@ -163,11 +163,11 @@
 1460909319 source:c:\program files (x86)\codeblocks\mingw\include\engine\core\varmap.cpp
 	"varmap.h"
 
-1477087016 source:n:\programming\c++\engine_test\main.cpp
+1477092705 source:n:\programming\c++\engine_test\main.cpp
 	<iostream>
 	<engine/engine.h>
 
-1477086934 source:c:\program files (x86)\codeblocks\mingw\include\engine\engine.cpp
+1477088173 source:c:\program files (x86)\codeblocks\mingw\include\engine\engine.cpp
 	"engine.h"
 
 1477085577 c:\program files (x86)\codeblocks\mingw\include\engine\engine.h
@@ -218,7 +218,7 @@
 	<engine/core/double2.h>
 	<GL/glu.h>
 
-1477085722 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\window.cpp
+1477089537 source:c:\program files (x86)\codeblocks\mingw\include\engine\graphics\window.cpp
 	"window.h"
 
 1477086656 c:\program files (x86)\codeblocks\mingw\include\engine\graphics\window.h
