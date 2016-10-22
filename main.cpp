@@ -12,7 +12,6 @@ int main(int argc, char* argv[])
 		cout << "engine failed to initialize\n";
 		return 0;
 	}
-    cout << "start engine\n";
 	engine.Run();
     return 0;
 }

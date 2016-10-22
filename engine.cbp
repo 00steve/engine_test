@@ -12,10 +12,10 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++11" />
-					<Add option="-Wall" />
-					<Add option="-g" />
 					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-g" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -39,20 +39,20 @@
 		<Linker>
 			<Add option="-lfreeimage" />
 			<Add library="glfw3" />
-			<Add library="glew32" />
-			<Add library="glu32" />
 			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
 			<Add library="ode" />
 		</Linker>
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/dll.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double2.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double2.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/int2.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/list.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/map.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.cpp" />
