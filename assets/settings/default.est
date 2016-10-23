@@ -9,15 +9,15 @@
 default{
 
     cameras[
-        global-light-cam{
-            type static
-			position 0,0,35
-			rotation 0,0,0
-        }
-		default-cam{
-			type static 
+		freecam{
+			type static
 			position 0,0,6
-			rotation 0,0,0
+            rotation 0,.1,0
+            animation{
+                period 10
+                rotation 0,.4,0
+                loop reverse
+            }
 		}
     ]
 
@@ -45,14 +45,10 @@ default{
             anchor center
             passes[
                 oneness{
-                    camera default-cam
+                    camera freecam
 					clear depth,color
 					clear-color 1,1,1
-                },
-				parttwo{
-					camera global-light-cam
-					clear depth
-				}
+                }
             ]
         }
 
