@@ -10,7 +10,7 @@ default{
 
     cameras[
 		freecam{
-			type static
+			type freetarget
 			position 0,0,6
             rotation 0,.1,0
             animation{
@@ -65,7 +65,7 @@ default{
 
 	engine-control{
 		type loadscreen
-		camera default-cam
+		#camera default-cam
 		settings initialload
 	}
 
