@@ -10,13 +10,14 @@ default{
 
     cameras[
 		freecam{
-			type freetarget
-			position 0,0,6
-            rotation 0,.1,0
+			type static
+			position 0,0,9
+            rotation 0,-.3,0
             animation{
-                period 10
-                rotation 0,.4,0
+                period 2
+                rotation 0,.6,0
                 loop reverse
+                ease 1
             }
 		}
     ]
@@ -36,18 +37,33 @@ default{
 
 
     views[
-        otherrender{
+        #otherrender{
+        #    type multipass
+        #    window window
+        #    sizing percent
+        #    render engine-control
+        #    scale 1,1
+        #    anchor center
+        #    passes[
+        #        oneness{
+        #            camera freecam
+	#				clear depth,color
+	#				clear-color 1,1,1
+    #            }
+     #       ]
+      #  }
+        somerender{
             type multipass
             window window
-            sizing percent
-            render engine-control
-            scale 1,1
-            anchor center
+            wizing percent
+            render engine-Control
+            scale .25,.25
+            anchor top-right
             passes[
-                oneness{
+                something{
                     camera freecam
-					clear depth,color
-					clear-color 1,1,1
+                    clear depth,color
+                    clear-color 1,1,1
                 }
             ]
         }
@@ -66,7 +82,11 @@ default{
 	engine-control{
 		type loadscreen
 		#camera default-cam
-		settings initialload
+		assets[
+        {
+            file textures/brown_brick.jpg
+        }
+        ]
 	}
 
 
