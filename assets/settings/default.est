@@ -70,8 +70,6 @@ default{
 
     ]
 
-
-
 	custom{
 		controller{
 			type keyboard
@@ -80,12 +78,42 @@ default{
 	}
 
 	engine-control{
-		type loadscreen
-		#camera default-cam
+        #name fps_main #NOT IMPLEMENTED
+		type fps
+		#type loadscreen
 		assets[
         {
             file textures/brown_brick.jpg
         }
+        ]
+        physics{
+            gravity 0,-1,0
+        }
+
+        props[
+            {
+                type crate
+                position 0,0,0
+            }
+            {
+                type crate
+                position 0,2,0
+            }
+            {
+                type crate
+                position 0,4,0
+            }
+        ]
+
+        nodes[
+            {
+                type prop.crate
+                position 4,.4,-.1
+            }
+            {
+                type prop.crate
+                position 4,1.4,-.12
+            }
         ]
 	}
 
