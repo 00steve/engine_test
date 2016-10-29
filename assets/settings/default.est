@@ -13,12 +13,12 @@ default{
 			type static
 			position 0,0,9
             rotation 0,-.3,0
-            animation{
-                period 2
-                rotation 0,.6,0
-                loop reverse
-                ease 1
-            }
+            #animation{
+            #    period 2
+            #    rotation 0,.6,0
+            #    loop reverse
+            #    ease 1
+            #}
 		}
     ]
 
@@ -37,21 +37,21 @@ default{
 
 
     views[
-        #otherrender{
-        #    type multipass
-        #    window window
-        #    sizing percent
-        #    render engine-control
-        #    scale 1,1
-        #    anchor center
-        #    passes[
-        #        oneness{
-        #            camera freecam
-	#				clear depth,color
-	#				clear-color 1,1,1
-    #            }
-     #       ]
-      #  }
+        otherrender{
+            type multipass
+            window window
+            sizing percent
+            render engine-control
+            scale 1,1
+            anchor center
+            passes[
+                oneness{
+                    camera freecam
+					clear depth,color
+					clear-color 1,1,1
+                }
+            ]
+        }
         somerender{
             type multipass
             window window
@@ -95,26 +95,18 @@ default{
                 type crate
                 position 0,0,0
             }
-            {
-                type crate
-                position 0,2,0
-            }
-            {
-                type crate
-                position 0,4,0
-            }
         ]
 
-        nodes[
-            {
-                type prop.crate
-                position 4,.4,-.1
-            }
-            {
-                type prop.crate
-                position 4,1.4,-.12
-            }
-        ]
+        #nodes[
+        #    {
+        #        type prop.crate
+        #        position 4,.4,-.1
+        #    }
+        #    {
+        #        type prop.crate
+        #        position 4,1.4,-.12
+        #    }
+        #]
 	}
 
 
@@ -122,23 +114,3 @@ default{
 
 
 
-
-	engine-control{
-		type fps
-		physics{
-            gravity 0,-9.81,0
-            step-size 20.1 #in milliseconds (20 ms = 50fps)
-		}
-
-		props[
-            {
-            type crate
-            position 5,5,-10
-            }
-            {
-            type crate
-            position 3,2,-4
-            }
-
-		]
-	}
