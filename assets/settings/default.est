@@ -52,21 +52,21 @@ default{
                 }
             ]
         }
-        somerender{
-            type multipass
-            window window
-            wizing percent
-            render engine-Control
-            scale .25,.25
-            anchor top-right
-            passes[
-                something{
-                    camera freecam
-                    clear depth,color
-                    clear-color 1,1,1
-                }
-            ]
-        }
+        #somerender{
+        #    type multipass
+        #    window window
+        #    wizing percent
+        #    render engine-Control
+        #    scale .25,.25
+        #    anchor top-right
+        #    passes[
+        #        something{
+        #            camera freecam
+        #            clear depth,color
+        #            clear-color 1,1,1
+        #        }
+        #    ]
+        #}
 
     ]
 
@@ -92,7 +92,8 @@ default{
 		
 		nodes[
 			{
-				type physical.plane
+				type physical.box
+				position 2,10,0
 			}
 		
 		]
