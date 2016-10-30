@@ -77,6 +77,17 @@
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/impact.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/impact.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical_single_body.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical_single_body.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physicsgroup.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
