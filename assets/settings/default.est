@@ -11,8 +11,8 @@ default{
     cameras[
 		freecam{
 			type static
-			position 0,0,9
-            rotation 0,-.3,0
+			position 0,1,9
+            rotation 0,0,0
             #animation{
             #    period 2
             #    rotation 0,.6,0
@@ -93,17 +93,33 @@ default{
 		nodes[
 			{
 				type physical.box
-				position 2,10,0
+				position 2,1,0
+			}
+			{
+				type physical.box
+				position 1.6,2,0
+			}
+			{
+				type physical.box
+				position 4,6,0
+			}
+			{
+				type physical.box
+				position 0,10,0
+			}
+			{
+				type physical.plane
+				offset -1
 			}
 		
 		]
 
-        props[
-            {
-                type crate
-                position 0,0,0
-            }
-        ]
+        #props[
+        #    {
+        #        type crate
+        #        position 0,0,0
+        #    }
+        #]
 
         #nodes[
         #    {
