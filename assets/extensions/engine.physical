@@ -1,4 +1,6 @@
 EXPORTS
     BuildBox @1
-    BuildPlane @2
-    DllMain@12 @3
+    BuildCylinder @2
+    BuildPlane @3
+    BuildSphere @4
+    DllMain@12 @5

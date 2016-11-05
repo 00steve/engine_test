@@ -11,7 +11,7 @@ default{
     cameras[
 		freecam{
 			type static
-			position 0,1,9
+			position 0,4,18
             rotation 0,0,0
             #animation{
             #    period 2
@@ -49,24 +49,10 @@ default{
                     camera freecam
 					clear depth,color
 					clear-color 1,1,1
+					shader 
                 }
             ]
         }
-        #somerender{
-        #    type multipass
-        #    window window
-        #    wizing percent
-        #    render engine-Control
-        #    scale .25,.25
-        #    anchor top-right
-        #    passes[
-        #        something{
-        #            camera freecam
-        #            clear depth,color
-        #            clear-color 1,1,1
-        #        }
-        #    ]
-        #}
 
     ]
 
@@ -89,7 +75,7 @@ default{
         physics{
             gravity 0,-1,0
         }
-		
+
 		nodes[
 			{
 				type physical.box
@@ -111,7 +97,47 @@ default{
 				type physical.plane
 				offset -1
 			}
-		
+			{
+                type physical.sphere
+                radius .5
+                position -2,1,0
+			}
+			{
+                type physical.sphere
+                radius 1
+                position 0,5,1
+				density 20
+				velocity 0,0,.32
+			}
+			{
+				type physical.box
+				position 7,.5,0
+				lengths 0.2,1,10
+			}
+			{
+				type physical.box
+				position -7,.5,0
+				lengths .2,1,10
+			}
+			{
+				type physical.cylinder
+				position 2,.5,4
+				density .0000000001
+			}
+			
+			{
+				type physical.cylinder
+				position 2,4.5,4
+				length 1
+				density .000000000001
+			}
+			{
+				type physical.box
+				position -2,.5,5
+				lengths 6,1,.1
+				density .1
+			}
+
 		]
 
         #props[
