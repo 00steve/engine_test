@@ -1,15 +1,17 @@
-#include "include/engine/engine.h"
+#include <iostream>
+using namespace std;
 
-int main() {
+#include <engine/engine.h>
 
 
-	engine e = engine();
-	if(!e.init()){
-		cout << "Engine failed to initiate!\n" << endl;
+int main(int argc, char* argv[])
+{
+
+	Engine engine;
+	if(!engine.Init()){
+		cout << "engine failed to initialize\n";
 		return 0;
 	}
-	e.run();
-
-
+	engine.Run();
     return 0;
-};
+}

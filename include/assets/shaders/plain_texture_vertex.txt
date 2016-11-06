@@ -1,8 +1,0 @@
-
-void main()
-{
-	/*sets the sandard boring texture of whatever texture0 is
-	so that the fragment shader can use it using the .st property*/
-	gl_TexCoord[0] = gl_MultiTexCoord0;
-	gl_Position = ftransform();
-}

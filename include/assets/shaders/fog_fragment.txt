@@ -1,7 +1,0 @@
-uniform sampler2D texture1;
-void main()
-{
-	float z = clamp(gl_FragCoord.z / gl_FragCoord.w/480,0,1);
-	gl_Color = mix(texture2D(texture1, gl_TexCoord[0].st),gl_Color,.1);
-	gl_FragColor = mix(gl_Color,vec4(.8,.8,1,1),z);
-}
