@@ -11,7 +11,7 @@ default{
     cameras[
 		freecam{
 			type static
-			position 0,4,18
+			position 0,4,23
             rotation 0,0,0
             #animation{
             #    period 2
@@ -26,7 +26,7 @@ default{
         window{
             #refresh-rate 30 #NOT IMPLEMENTED
             #fullscreen false #NOT IMPLEMENTED
-            size 800,600
+            size 1280,720
             bitdepth 32
             position 150,50
             user-resizable true
@@ -49,7 +49,7 @@ default{
                     camera freecam
 					clear depth,color
 					clear-color 1,1,1
-					shader 
+					shader
                 }
             ]
         }
@@ -106,12 +106,12 @@ default{
                 type physical.sphere
                 radius 1
                 position 0,5,1
-				density 20
+				density 3
 				velocity 0,0,.32
 			}
 			{
 				type physical.box
-				position 7,.5,0
+				position 14,.5,0
 				lengths 0.2,1,10
 			}
 			{
@@ -122,14 +122,12 @@ default{
 			{
 				type physical.cylinder
 				position 2,.5,4
-				density .0000000001
 			}
-			
+
 			{
 				type physical.cylinder
-				position 2,4.5,4
+				position 2.45,1.5,4
 				length 1
-				density .000000000001
 			}
 			{
 				type physical.box
@@ -137,7 +135,30 @@ default{
 				lengths 6,1,.1
 				density .1
 			}
+			{
+                type physical.capsule
+                position 5.25,4,3
+                density 1
+                length 2
+                radius .75
+			}
 
+			{
+                type physical.capsule
+                position 7.25,4,3
+                density 1
+                length 2
+                radius .5
+			}
+
+
+			{
+                type physical.capsule
+                position 9.25,4,3
+                density 1
+                length 2
+                radius .25
+			}
 		]
 
         #props[
