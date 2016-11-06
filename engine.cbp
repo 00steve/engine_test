@@ -38,11 +38,13 @@
 		</Compiler>
 		<Linker>
 			<Add option="-lfreeimage" />
+			<Add library="ode" />
+			<Add library="glew32" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
 			<Add library="glu32" />
-			<Add library="ode" />
+			<Add library="mingw32" />
 		</Linker>
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h" />
@@ -73,6 +75,8 @@
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/camera.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/glstructs.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/glstructs.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/shader.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/shader.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.cpp" />
