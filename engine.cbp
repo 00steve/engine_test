@@ -78,6 +78,10 @@
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/mechanism/marker.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/mechanism/marker.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/mechanism/spawner.cpp" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/mechanism/spawner.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/impact.cpp" />

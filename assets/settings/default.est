@@ -11,8 +11,8 @@ default{
     cameras[
 		freecam{
 			type static
-			position 0,4,23
-            rotation 0,0,0
+			position 23,4,0
+            rotation 0,1.57,0
             #animation{
             #    period 2
             #    rotation 0,.6,0
@@ -26,7 +26,7 @@ default{
         window{
             #refresh-rate 30 #NOT IMPLEMENTED
             #fullscreen false #NOT IMPLEMENTED
-            size 1280,720
+            size 1280,960
             bitdepth 32
             position 150,50
             user-resizable true
@@ -119,16 +119,16 @@ default{
 				position -7,.5,0
 				lengths .2,1,10
 			}
-			{
-				type physical.cylinder
-				position 2,.5,4
-			}
+			#{
+			#	type physical.cylinder
+			#	position 2,.5,4
+			#}
 
-			{
-				type physical.cylinder
-				position 2.45,1.5,4
-				length 1
-			}
+			#{
+			#	type physical.cylinder
+			#	position 2.45,1.5,4
+			#	length 1
+			#}
 			{
 				type physical.box
 				position -2,.5,5
@@ -145,7 +145,7 @@ default{
 
 			{
                 type physical.capsule
-                position 7.25,4,3
+                position 7,4,3
                 density 1
                 length 2
                 radius .5
@@ -154,11 +154,26 @@ default{
 
 			{
                 type physical.capsule
-                position 9.25,4,3
+                position 6.5,8,3
                 density 1
                 length 2
                 radius .25
 			}
+			{
+				type physical.boxspawner
+				position 0,10,3
+			}
+			#{
+			#	type spawner
+			#	spawn physical.box
+			#}
+			
+			#{
+			#	type cable
+			#	segments 10
+			#	thickness .25
+			#	length 5
+			#}
 		]
 
         #props[

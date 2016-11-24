@@ -1,7 +1,8 @@
 EXPORTS
     BuildBox @1
-    BuildCapsule @2
-    BuildCylinder @3
-    BuildPlane @4
-    BuildSphere @5
-    DllMain@12 @6
+    BuildBoxspawner @2
+    BuildCapsule @3
+    BuildCylinder @4
+    BuildPlane @5
+    BuildSphere @6
+    DllMain@12 @7
