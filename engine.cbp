@@ -45,6 +45,7 @@
 			<Add library="glu32" />
 			<Add library="mingw32" />
 		</Linker>
+		<Unit filename="../engine.physicals/cable.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h" />
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/dll.h" />
