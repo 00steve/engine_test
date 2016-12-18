@@ -196,8 +196,13 @@ default{
     cameras[
 		freecam{
 			type static
-			position 14,3,0
-            rotation 0,1.57,0
+			#rotated 90 degrees to the left
+			#position 14,3,0
+            #rotation 0,1.57,0
+			
+			#no rotation, looking forward
+			position 0,3,14
+			rotation 0,0,0
 		}
     ]
 
@@ -228,7 +233,7 @@ default{
                     camera freecam
 					clear depth,color
 					clear-color 1,1,1
-					shader
+					shader physics_basic
                 }
             ]
         }
@@ -263,15 +268,25 @@ default{
 			}
 			{
 				type physical.box
-				position 1,3,3
+				position .6,3,3
+				size 1,2,.2
+				density 10
 			}
 			{
 				type physical.plane
 				offset -1
 			}
 
-
-
+			{
+				type physical.sphere
+				position 3,2,0
+			}
+			
+			{
+				type physical.cylinder
+				position 4.3,1,0
+			}
+			
 			{
 				type physical.cable
 				length 20
