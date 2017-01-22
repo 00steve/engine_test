@@ -6,19 +6,23 @@
 
 
 
-defaultbackup{
+default{
 
     cameras[
 		freecam{
 			type static
-			position 0,3,15
-            rotation 0,0,0
-            #animation{
-            #    period 2
-            #    rotation 0,.6,0
-            #    loop reverse
-            #    ease 1
-            #}
+			#rotated 90 degrees to the left
+			#position 14,3,0
+            #rotation 0,1.57,0
+			
+			#no rotation, looking forward
+			position 0,3,14
+			rotation 0,0,0
+		}
+		lightcam{
+			type static
+			rotation -1,0,0
+			position 0,20,20
 		}
     ]
 
@@ -37,23 +41,15 @@ defaultbackup{
 
 
     views[
-        otherrender{
-            type multipass
-            window window
-            sizing percent
-            render engine-control
-            scale 1,1
-            anchor center
-            passes[
-                oneness{
-                    camera freecam
-					clear depth,color
-					clear-color 1,1,1
-					shader
-                }
-            ]
-        }
-
+		shadowrender{
+			type shadowmapped
+			window window
+			sizing percent
+			render engine-control
+			scale .5,.5
+			anchor top-left
+			camera lightcam
+		}
     ]
 
 	custom{
@@ -77,22 +73,16 @@ defaultbackup{
         }
 
 		nodes[
+
 			{
 				type physical.box
-				position 2,1,0
+				position 4,16,0
 			}
 			{
 				type physical.box
-				position 1.6,2,0
+				position 3,4,0
 			}
-			{
-				type physical.box
-				position 4,6,0
-			}
-			{
-				type physical.box
-				position 0,10,0
-			}
+
 			{
 				type physical.plane
 				offset -1
@@ -142,158 +132,8 @@ defaultbackup{
                 length 2
                 radius .75
 			}
-
-			{
-                type physical.capsule
-                position 7.25,4,3
-                density 1
-                length 2
-                radius .5
-			}
-
-
-			{
-                type physical.capsule
-                position 9.25,4,3
-                density 1
-                length 2
-                radius .25
-			}
 			
-			{
-				type physical.cable
-			}
-		]
-
-        #props[
-        #    {
-        #        type crate
-        #        position 0,0,0
-        #    }
-        #]
-
-        #nodes[
-        #    {
-        #        type prop.crate
-        #        position 4,.4,-.1
-        #    }
-        #    {
-        #        type prop.crate
-        #        position 4,1.4,-.12
-        #    }
-        #]
-	}
-
-
-}
-
-
-
-
-
-default{
-
-    cameras[
-		freecam{
-			type static
-			#rotated 90 degrees to the left
-			#position 14,3,0
-            #rotation 0,1.57,0
 			
-			#no rotation, looking forward
-			position 0,3,14
-			rotation 0,0,0
-		}
-    ]
-
-	windows{
-        window{
-            #refresh-rate 30 #NOT IMPLEMENTED
-            #fullscreen false #NOT IMPLEMENTED
-            size 800,600
-            bitdepth 32
-            position 150,50
-            user-resizable true
-            title "new window"
-            multisampling 8
-		}
-	}
-
-
-    views[
-        otherrender{
-            type multipass
-            window window
-            sizing percent
-            render engine-control
-            scale 1,1
-            anchor center
-            passes[
-                oneness{
-                    camera freecam
-					clear depth,color
-					clear-color 1,1,1
-					shader physics_basic
-                }
-            ]
-        }
-
-    ]
-
-	custom{
-		controller{
-			type keyboard
-			window window
-		}
-	}
-
-	engine-control{
-        #name fps_main #NOT IMPLEMENTED
-		type fps
-		#type loadscreen
-		assets[
-        {
-            file textures/brown_brick.jpg
-        }
-        ]
-        physics{
-            gravity 0,-1,0
-        }
-
-		nodes[
-
-			{
-				type physical.box
-				position 4,6,0
-			}
-			{
-				type physical.box
-				position .6,3,3
-				size 1,2,.2
-				density 10
-			}
-			{
-				type physical.plane
-				offset -1
-			}
-
-			{
-				type physical.sphere
-				position 3,2,0
-			}
-			
-			{
-				type physical.cylinder
-				position 4.3,1,0
-			}
-			
-			{
-				type physical.cable
-				length 20
-				thickness  .25
-				position 2,10,0
-				segments 50
-			}
 		]
 
 	}

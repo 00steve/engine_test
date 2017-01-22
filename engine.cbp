@@ -14,7 +14,6 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-Wall" />
-					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
@@ -38,58 +37,15 @@
 		</Compiler>
 		<Linker>
 			<Add option="-lfreeimage" />
-			<Add library="ode" />
+			<Add library="glu32" />
+			<Add library="engine" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
-			<Add library="glu32" />
 			<Add library="mingw32" />
+			<Add library="ode" />
 		</Linker>
-		<Unit filename="../engine.physicals/cable.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/dll.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double2.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double2.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/int2.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/list.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/map.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/noderequest.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/timer.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/timer.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/engine.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/engine.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/camera.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/camera.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/glstructs.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/glstructs.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/view.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/graphics/window.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/impact.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/impact.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical_single_body.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical_single_body.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.cpp" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.h" />
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physicsgroup.h" />
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double4x4.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
