@@ -9,9 +9,10 @@
 default{
 
     cameras[
-		freecam{
+		badcam{
 			type static
-			position 0,4,23
+			#position -88.1,43,60
+			position 0,0,20
             rotation 0,0,0
 		}
     ]
@@ -22,7 +23,7 @@ default{
             #fullscreen false #NOT IMPLEMENTED
             size 1280,720
             bitdepth 32
-            position 150,50
+            position 250,50
             user-resizable true
             title "new window"
             multisampling 8
@@ -39,11 +40,11 @@ default{
             scale 1,1
             anchor center
             passes[
-                oneness{
-                    camera freecam
+                coolio{
+                    camera badcam
 					clear depth,color
-					clear-color 1,1,1
-					shader plain_texture
+					clear-color 0,1,0
+					#shader simple1
                 }
             ]
         }
@@ -59,7 +60,17 @@ default{
 
 	engine-control{
 		type deadreckon
-
+		#default-log LOG46.LBR
+		
+		data-stream[
+			gps{
+				column gps
+				x-axis 0
+				y-axis 2
+			}
+		
+		]
+		
 	}
 
 

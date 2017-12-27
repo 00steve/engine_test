@@ -1,0 +1,6 @@
+varying vec3 vertex_color;
+uniform bool enabled;
+void main()
+{
+	gl_FragColor =vec4(1,0,0,.3);
+}

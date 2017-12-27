@@ -1,0 +1,382 @@
+
+#default group is what is loaded into the engine by default when it is initialized
+#window - if a single window is being created. it will be given the global name of "window"
+#windows - if more than one window is being created. Each window will be given the global name it's group uses in the config
+
+
+
+
+defaultbackup{
+
+    cameras[
+		freecam{
+			type static
+			position 0,3,15
+            rotation 0,0,0
+            #animation{
+            #    period 2
+            #    rotation 0,.6,0
+            #    loop reverse
+            #    ease 1
+            #}
+		}
+    ]
+
+	windows{
+        window{
+            #refresh-rate 30 #NOT IMPLEMENTED
+            #fullscreen false #NOT IMPLEMENTED
+            size 800,600
+            bitdepth 32
+            position 150,50
+            user-resizable true
+            title "new window"
+            multisampling 8
+		}
+	}
+
+
+    views[
+        otherrender{
+            type multipass
+            window window
+            sizing percent
+            render engine-control
+            scale 1,1
+            anchor center
+            passes[
+                oneness{
+                    camera freecam
+					clear depth,color
+					clear-color 1,1,1
+					shader
+                }
+            ]
+        }
+
+    ]
+
+	custom{
+		controller{
+			type keyboard
+			window window
+		}
+	}
+
+	engine-control{
+        #name fps_main #NOT IMPLEMENTED
+		type fps
+		#type loadscreen
+		assets[
+        {
+            file textures/brown_brick.jpg
+        }
+        ]
+        physics{
+            gravity 0,-1,0
+        }
+
+		nodes[
+			{
+				type physical.box
+				position 2,1,0
+			}
+			{
+				type physical.box
+				position 1.6,2,0
+			}
+			{
+				type physical.box
+				position 4,6,0
+			}
+			{
+				type physical.box
+				position 0,10,0
+			}
+			{
+				type physical.plane
+				offset -1
+			}
+			{
+                type physical.sphere
+                radius .5
+                position -2,1,0
+			}
+			{
+                type physical.sphere
+                radius 1
+                position 0,5,1
+				density 3
+				velocity 0,0,.32
+			}
+			{
+				type physical.box
+				position 14,.5,0
+				lengths 0.2,1,10
+			}
+			{
+				type physical.box
+				position -7,.5,0
+				lengths .2,1,10
+			}
+			{
+				type physical.cylinder
+				position 2,.5,4
+			}
+
+			{
+				type physical.cylinder
+				position 2.45,1.5,4
+				length 1
+			}
+			{
+				type physical.box
+				position -2,.5,5
+				lengths 6,1,.1
+				density .1
+			}
+			{
+                type physical.capsule
+                position 5.25,4,3
+                density 1
+                length 2
+                radius .75
+			}
+
+			{
+                type physical.capsule
+                position 7.25,4,3
+                density 1
+                length 2
+                radius .5
+			}
+
+
+			{
+                type physical.capsule
+                position 9.25,4,3
+                density 1
+                length 2
+                radius .25
+			}
+			
+			{
+				type physical.cable
+			}
+		]
+
+        #props[
+        #    {
+        #        type crate
+        #        position 0,0,0
+        #    }
+        #]
+
+        #nodes[
+        #    {
+        #        type prop.crate
+        #        position 4,.4,-.1
+        #    }
+        #    {
+        #        type prop.crate
+        #        position 4,1.4,-.12
+        #    }
+        #]
+	}
+
+
+}
+
+
+
+
+
+default{
+
+    cameras[
+		freecam{
+			type static
+			#rotated 90 degrees to the left
+			#position 14,3,0
+            #rotation 0,1.57,0
+			
+			#no rotation, looking forward
+			position 0,3,14
+			rotation 0,0,0
+		}
+		lightcam{
+			type static
+			rotation -1,0,0
+			position 0,20,20
+		}
+    ]
+
+	windows{
+        window{
+            #refresh-rate 30 #NOT IMPLEMENTED
+            #fullscreen false #NOT IMPLEMENTED
+            size 800,600
+            bitdepth 32
+            position 150,50
+            user-resizable true
+            title "new window"
+            multisampling 8
+		}
+	}
+
+
+    views[
+        otherrender{
+            type multipass
+            window window
+            sizing percent
+            render engine-control
+            scale .5,.5
+            anchor bottom-right
+            passes[
+                oneness{
+                    camera lightcam
+					clear depth,color
+					clear-color 1,1,1
+					shader depth
+                }
+            ]
+        },
+		rightrender{
+            type multipass
+            window window
+            sizing percent
+            render engine-control
+            scale .5,.5
+            anchor bottom-left
+            passes[
+                rightone{
+                    camera freecam
+					clear depth,color
+					clear-color 1,0,1
+					shader simple1
+                }
+            ]
+        },
+		lastrender{
+            type multipass
+            window window
+            sizing percent
+            render engine-control
+            scale .5,.5
+            anchor top-left
+            passes[
+			
+				{
+					blend GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA	
+					camera lightcam
+					clear depth
+					shader physics_highlight
+				},
+                {
+                    camera lightcam
+					clear depth,color
+					clear-color 1,0,1
+					shader physics_basic
+                }
+            ]
+        },
+		shadowrender{
+			type shadowmapped
+			window window
+			sizing percent
+			render engine-control
+			scale .5,.5
+			anchor top-right
+			camera lightcam
+		}
+
+    ]
+
+	custom{
+		controller{
+			type keyboard
+			window window
+		}
+	}
+
+	engine-control{
+        #name fps_main #NOT IMPLEMENTED
+		type fps
+		#type loadscreen
+		assets[
+        {
+            file textures/brown_brick.jpg
+        }
+        ]
+        physics{
+            gravity 0,-1,0
+        }
+
+		nodes[
+
+			{
+				type physical.box
+				position 4,6,0
+			}
+
+			{
+				type physical.plane
+				offset -1
+			}
+			{
+                type physical.sphere
+                radius .5
+                position -2,1,0
+			}
+			{
+                type physical.sphere
+                radius 1
+                position 0,5,1
+				density 3
+				velocity 0,0,.32
+			}
+			{
+				type physical.box
+				position 14,.5,0
+				lengths 0.2,1,10
+			}
+			{
+				type physical.box
+				position -7,.5,0
+				lengths .2,1,10
+			}
+			{
+				type physical.cylinder
+				position 2,.5,4
+			}
+
+			{
+				type physical.cylinder
+				position 2.45,1.5,4
+				length 1
+			}
+			{
+				type physical.box
+				position -2,.5,5
+				lengths 6,1,.1
+				density .1
+			}
+			{
+                type physical.capsule
+                position 5.25,4,3
+                density 1
+                length 2
+                radius .75
+			}
+			
+			
+		]
+
+	}
+
+
+}
+
+
+
